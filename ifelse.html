@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //   var a = prompt("Enter a number:");
+      //   if (a > 0) {
+      //     alert("POSITIVE NUMBER");
+      //   } else {
+      //     alert("NEGATIVE NUMBER");
+      //   }
+      //   var grade;
+      //   var score = prompt("Enter the Marks:");
+      //   if (score >= 90) {
+      //     grade = "A";
+      //   } else if (score >= 70) {
+      //     grade = "B";
+      //   } else if (score >= 60) {
+      //     grade = "C";
+      //   } else {
+      //     grade = "D";
+      //   }
+      //   document.write("Your Marks:   " + score + " Grade: " + grade);
+
+      var n1 = +prompt("Enter the number1:");
+      var n2 = +prompt("Enter the number2:");
+      var operation = prompt("Enter the operation todo (+/-/*/ /)");
+
+      switch (operation) {
+        case "+":
+          alert("Sum of two numbers are:" + (n1 + n2));
+          break;
+        case "-":
+          alert("Difference of two numbers:" + (n1 - n2));
+          break;
+        case "*":
+          alert("Mul of two numbers:" + n1 * n2);
+          break;
+        case "/":
+          alert("Divide the two numbers:" + n1 / n2);
+          break;
+        default:
+          alert("Enter valid operation");
+      }
+    </script>
+  </body>
+</html>

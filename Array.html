@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var movies = ["raa", "one", "zero"];
+      var mov = new Array("Bahubali", "Acharya", "RRR");
+
+      console.log(`Mov is :  ${mov}  `);
+      console.log(`Movies are :  ${movies}  `);
+      console.log(`Movies are :  ${movies[6]}  `);
+      console.log(`Movies are :  ${movies[2]}  `);
+      //   var l = length(movies);
+      //   console.log(`Movies are :  ${l}  `);
+
+      movies.push("Maharshi");
+      console.log(`Movies are :  ${movies}  `);
+      console.log(`Movies are :  ${movies.pop()}  `);
+      console.log(`Movies are :  ${movies}  `);
+      movies.unshift("Maharshi");
+      console.log(`Movies are :  ${movies}  `);
+      console.log(`Movies are :  ${movies.shift()}  `);
+      console.log(`Movies are :  ${movies}  `);
+      console.log(`Index of acharya: ${movies.indexOf("zero")}`);
+      console.log("Index of acharya :" + movies.indexOf("Acharya"));
+      console.log(`Slice of : ${movies.slice(1, 4)}`);
+    </script>
+  </body>
+</html>
