@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //Anonomous Function
+      add = function (n1, n2) {
+        var rel = n1 + n2;
+        return rel;
+      };
+      document.write(`Sum of two functions: ${add(44, 55)}`);
+
+      //IIFE
+      var add1 = (function (n1, n2) {
+        var rel = n1 + n2;
+        return rel;
+      })(78, 99);
+      document.write(`<br>  Sum of two functions from IIFE : ${add1} <br>`);
+
+      (function (n1, n2) {
+        var rel = n1 + n2;
+        document.write(`<br>  Sum of two functions from IIFE : ${rel} <br>`);
+      })(78, 199);
+
+      //Arrow Function
+
+      mul = (n1, n2) => {
+        rel = n1 * n2;
+        return rel;
+      };
+      document.write(
+        `<br>  Multiply of two functions from IIFE : ${mul(5, 4)} <br>`
+      );
+
+      ///if have only one statemnt
+
+      var mul = (n1, n2) => n1 * n2;
+      document.write("Single statement in arrow :  ", mul(5, 5));
+
+      ///only one parameter
+      var cube = (n1) => n1 * n1 * n1;
+      document.write("<br> cube if single parameter in arrow :  ", cube(7));
+
+      //If no argument
+      var greet = () => document.write("<br>Good Morning!!");
+      greet();
+      var greet = (_) => document.write("<br>Good Morning ___!!");
+      greet();
+    </script>
+  </body>
+</html>

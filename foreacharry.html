@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var salaries = [60000, 50000, 80000];
+      console.log("salary: ", salaries);
+      salaries.forEach(ic);
+
+      function ic(salary, index) {
+        // console.log("salary: ", salary);
+        // console.log("index", index);
+        // console.log("array : ", arrar);
+        let incre = salary / 10;
+        salaries[index] = salary + incre;
+        // console.log("salary: ", salary);
+        // console.log("index", index);
+        // console.log("array : ", arrar);
+      }
+      console.log("salary: ", salaries);
+    </script>
+  </body>
+</html>
