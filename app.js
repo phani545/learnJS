@@ -5,8 +5,13 @@ let head = React.createElement(
   },
   "This is React JS Demo"
 );
+
+let para = React.createElement("p", {}, "This Paragraph");
+
+let wrapper = React.createElement("div", {}, [head, para]);
+
 let ele = document.getElementById("root");
 
 let root = ReactDOM.createRoot(ele);
 
-root.render(head);
+root.render(wrapper);
