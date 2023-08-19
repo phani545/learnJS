@@ -51,14 +51,34 @@ import movies from "./fun";
 
 let App = (props) => {
   console.dir(props);
+  function displayMessage() {
+    alert("button Clicked");
+  }
   return (
-    <div>
-      <p>Arrow:- This is heading</p>
-      <p>This is heading2</p>
-      <movies />
-      <p>{props.children}</p>
-    </div>
+    <>
+      <div>HHi... </div>
+      <div style={{ display: "flex", gap: 20 }}>
+        <FlexItems />
+      </div>
+      <div>
+        <p>Arrow:- This is heading</p>
+        <p>This is heading2</p>
+        <movies />
+        <p>{props.children}</p>
+      </div>
+      <button onClick={displayMessage}>Click</button>
+    </>
   );
 };
+
+function FlexItems() {
+  return (
+    <>
+      <div>This is Div1</div>
+      <div>This is Div2</div>
+      <div>This is Div3</div>
+    </>
+  );
+}
 
 export default App;
