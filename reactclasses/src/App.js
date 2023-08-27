@@ -295,6 +295,7 @@ function App() {
     { id: 2, task: "Angular" },
   ]);
   let ran = 3;
+
   function addNewTodo() {
     if (todoInput == "") {
       alert("Add New Task");
