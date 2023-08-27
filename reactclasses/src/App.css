@@ -1,4 +1,48 @@
-h1 {
+/* h1 {
   background: red;
   color: aliceblue;
+} */
+
+/* .Wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+} */
+/* 
+.Wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+}
+
+.counter {
+  font-size: 22px;
+}
+.Wrapper button {
+  border: none;
+  color: white;
+  outline: none;
+  padding: 10px 15px;
+  font-size: 22px;
+  border-radius: 4px;
+}
+
+button:disabled {
+  opacity: 0.6;
+}
+button.Plus {
+  background-color: aqua;
+}
+
+button.Minus {
+  background-color: brown;
+} */
+
+.list-group-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
