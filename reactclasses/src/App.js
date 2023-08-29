@@ -8,6 +8,7 @@ import React, { useState } from "react";
 import "./App.css";
 import TwoWay from "./TwowayBind";
 import Product from "./Product";
+import Cal from "./Calu";
 //import movies from "./fun";
 
 // function App() {
@@ -361,6 +362,9 @@ function App() {
       </div>
       <br />
       <TwoWay />
+      <br />
+      <br />
+      <Cal />
     </>
   );
 }
