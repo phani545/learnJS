@@ -7,11 +7,19 @@ button {
   border-top: 1px solid #666;
   border-right: 1px solid #666;
 }
-
+.operator:hover {
+  background-color: aliceblue;
+}
 .operator {
   background-color: chocolate;
 }
 
+.digit:hover {
+  background-color: bisque;
+}
+.funKey:hover {
+  background-color: aqua;
+}
 .funKey {
-  background-color: #666;
+  background-color: #5c2d2d;
 }
